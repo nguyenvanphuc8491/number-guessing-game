@@ -99,13 +99,13 @@ h1 {
   color: #222;
   font-size: 2rem;
   font-family: inherit;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
   cursor: pointer;
   border-radius: 20px;
 }
 .again {
   position: absolute;
-  top: 2rem;
+  top: 1rem;
   left: 1rem;
   color: red;
 }
