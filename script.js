@@ -12,11 +12,11 @@ document.querySelector('.check').addEventListener('click', function () {
   let guess = Number(document.querySelector('.guess').value);
   // nếu không nhập gì
   if (!guess) {
-    message.textContent = 'Số Từ 1 Đến 20!';
+    message.textContent = 'Nhập Số Từ 1 Đến 20!';
     // nếu số nhập lớn hơn số ngẫu nhiên bí mật
   } else if (guess > correctNumber) {
     if (score >= 1) {
-      message.textContent = 'Cao Rồi!😁';
+      message.textContent = 'Ố ô, Sai Rồi!😁';
       score--;
       document.querySelector('.score').textContent = score;
     }
@@ -28,7 +28,7 @@ document.querySelector('.check').addEventListener('click', function () {
     // nếu số nhập nhỏ hơn số ngẫu nhiên bí mật
   } else if (guess < correctNumber) {
     if (score >= 1) {
-      message.textContent = 'Thấp Quá!😜';
+      message.textContent = 'Ồ, Chưa Đúng!😜';
       score--;
       document.querySelector('.score').textContent = score;
     }
