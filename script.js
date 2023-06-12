@@ -4,6 +4,7 @@ let correctNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 10;
 let highscore = 0;
 let message = document.querySelector('.message');
+document.querySelector('.score').textContent = score;
 // function test() {}
 // document.querySelector('.check').addEventListener('click', test);
 
