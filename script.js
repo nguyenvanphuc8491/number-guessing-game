@@ -37,17 +37,21 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.score').textContent = 0;
     }
     // Nếu số nhập bằng số ngẫu nhiên bí mật
-  } else if (guess === correctNumber) {
-    if (score >= 1 && score > highscore) {
+  } 
+  if (guess === correctNumber) {
+    if (score >= 1) {
       message.textContent = 'Chúc Mừng👏👏 Số Bí Ẩn Đây rồi!';
       document.querySelector('.number').textContent = correctNumber;
       document.querySelector('body').style.backgroundColor = '#60b347';
       // document.querySelector('.number').style.width = '30rem';
+     } 
+    if(score > highscore){
       highscore = score;
       document.querySelector('.highscore').textContent = highscore;
+     } 
       // Vô hiệu hoá nút check
       document.querySelector('.check').disabled = true;
-    }
+    
   }
 });
 console.log(correctNumber);
