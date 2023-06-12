@@ -1,7 +1,7 @@
 'use strict';
 // Tạo 1 số ngẫu nhiên từ 1-20
 let correctNumber = Math.trunc(Math.random() * 20) + 1;
-let score = 20;
+let score = 10;
 let highscore = 0;
 let message = document.querySelector('.message');
 // function test() {}
