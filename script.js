@@ -57,7 +57,7 @@ document.querySelector('.check').addEventListener('click', function () {
 console.log(correctNumber);
 // Khi bấm nút again, phục hồi trạng thái ban đầu trừ highscore
 document.querySelector('.again').addEventListener('click', function () {
-  score = 20;
+  score = 10;
   correctNumber = Math.trunc(Math.random() * 20) + 1;
 
   message.textContent = 'Bắt Đầu Đoán Số...';
